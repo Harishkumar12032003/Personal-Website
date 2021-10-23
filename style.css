@@ -36,13 +36,26 @@ body{
   position:absolute;
   top:220px;
   left:300px;
+  animation: cloud2Move 60s infinite;
 }
+@keyframes cloud2Move {
+  0%   {left: 120%; top: 220px;}
+  50%  {left: -150px; top: 220px;}
+  100% {left: 120%; top: 220px;}
+}
+
 #cloud1{
   position: absolute;
   right:400px;
   top:50px;
-
+  animation: cloud1Move 60s infinite;
 }
+@keyframes cloud1Move {
+  0%   {left: -100px; top: 50px;}
+  50%  {left: 100%; top: 50px;}
+  100% {left: -150px; top: 50px;}
+}
+
 h1{
   top:50px;
   position: relative;
